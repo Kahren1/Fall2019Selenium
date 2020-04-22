@@ -12,8 +12,10 @@ public class BasicNavigation {
         //Selenium requires webdriver setup
         WebDriverManager.chromedriver().setup();
         //need chromedriver object that will send commands to the webdriver
+        //need this object to open a website, maximize window, etc
+        //get(), close(), getTitle(), quit()
         WebDriver driver = new ChromeDriver();
-        //in Selenium, everything starts from WebDriver interface
+        //in Selenium, everything starts with WebDriver interface
         //CrhomeDriver extends RemoteWebDriver and implements WebDriver
         driver.get("http://google.com");//to open a website
 
